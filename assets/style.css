@@ -5,6 +5,31 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+    background-color: darkslateblue;
+}
+
+.container {
+    height: 281px;
+    padding-top: 50px;
+}
+
+.search-city-h5, .saved-searches-h4 {
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.weatherH1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-top {
+    text-align: center;
+    font-size: 25px;
+}
+
 .inputSearch{
     text-align: center;
     max-width: 100px 0;
@@ -31,4 +56,22 @@ input[type="submit"]{
 
 .display{
     text-align: center;
+}
+
+
+aside {
+    width: 250px;
+    float: left;
+    padding-left: 20px;
+}
+
+#futureForecast {
+    float: right;
+    padding-right: 50px;
+    display: contents;
+}
+
+.current {
+    text-align: center;
+    margin-top: 70px;
 }

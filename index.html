@@ -5,29 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/reset.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 <body>
     <header>
-        <h1>Weather Dashboard</h1>
-    </header>
-    <br>
+        <div class="container">
+          <h1 class="weatherH1">Weather Dashboard</h1>
+          <h4 class="header-top">5 Day Forecast</h4>
+          <p class="header-top" id="currentDay"></p>
+        </div>
+      </header>
+    
+    
+      <aside class="leftSide">
+          <h4 class="search-city-h5">Search City:</h4>
+            <input id="searchCity" class="form-control mt-3" placeholder="Search City"
+            class="input-group-append" />
+            <button id="searchBtn"></button>
+    
+            <div class="saved-searches">
+              <h4 class="saved-searches-h4">Recent Searches</h4>
+              <div id="cityList" id="newDivHere" class="list-group list-group-flush list form-control mt-3" ></div>
+            </div>
+      </aside>
+           
+          <!-- future forecast -->
 
-    <!-- SEEACH INPUT FOR USER -->
-    <div class="inputSearch">
-    <input id="city" type="text" placeholder="Enter A City">
-    <input id="button" type="submit" value="submit">
-    </div>
+        <div id="futureForecast">
+                      <!-- Weather Output-->
+          <div id="currentCity" class="current">
+              <div class="container">
+            <section>
+              <h1 class="city col"></h1>
+              <h2 class="tempF col"></h2>
+              <h3 class="humidity col"></h3>
+              <h3 class="wind col"></h3>
+              <h3 class="uvIndex col"></h3>
+            </section>
+              </div>
+        </div>
+          <h1 id="fiveDay"></h1>
+      
+        
+        <div class="card-group">
+        <div class="card">
+            <h2 class="tempF0"></h2>
+            <h3 class="humidity0"></h3>
+            <h3 class="wind0"></h3>
+        </div>
 
-    <!-- DISPLAY RESULTS HERE -->
-    <div class="displayResults">
-        <h1 class="name"></h1>
-        <p class="desc"></p>
-        <p class="temp"></p>
-    </div>
+        <div class="card">
+            <h2 class="tempF1"></h2>
+            <h3 class="humidity1"></h3>
+            <h3 class="wind1"></h3>
+            <h3 class="uvIndex1"></h3>
+        </div>
 
+        <div class="card">
+            <h2 class="tempF2"></h2>
+            <h3 class="humidity2"></h3>
+            <h3 class="wind2"></h3>
+            <h3 class="uvIndex2"></h3>
+        </div>
 
+        <div class="card"> 
+            <h2 class="tempF3"></h2>
+            <h3 class="humidity3"></h3>
+            <h3 class="wind3"></h3>
+            <h3 class="uvIndex3"></h3>
+        </div>
+
+        <div class="card">
+            <h2 class="tempF4"></h2>
+            <h3 class="humidity4"></h3>
+            <h3 class="wind4"></h3>
+            <h3 class="uvIndex4"></h3>
+        </div>
+      </div>
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"
 <script src="./assets/script.js"></script>
 </body>
 </html>
